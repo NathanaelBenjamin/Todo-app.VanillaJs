@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+button, input[type="checkbox"]{
+    cursor: pointer;
+}
+
+input, button{
+    height: 1.3rem;
+}
+
+li{
+    margin: 1.2rem 0;
+}
+
+.todo{
+    border-bottom: 2px solid gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task{
+    display: flex;
+    gap: .6rem;
+    width: min(75%, 60rem);
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+}
