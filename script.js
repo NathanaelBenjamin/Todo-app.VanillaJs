@@ -61,10 +61,12 @@ function showTasks(nameOfTask){
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    todos.push(taskInput.value);
-    localStorage.setItem("todos", JSON.stringify(todos));
-    showTasks(taskInput.value);
-    taskInput.value = "";
+    if(taskInput.value){
+        todos.push(taskInput.value);
+        localStorage.setItem("todos", JSON.stringify(todos));
+        showTasks(taskInput.value);
+        taskInput.value = "";
+    }
 });
 
 todos.map(todo => {
