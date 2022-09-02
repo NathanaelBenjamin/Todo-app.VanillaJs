@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="/dist/output.css">
     <script src="./script.js" defer></script>
-    <title>Document</title>    
+    <title>Todo App</title>    
 </head>
 <body>
-    <div class="container">
-        <form>
-            <input type="text" placeholder="Enter task" class="name">
-            <button>Add task</button>
+    <div class="container bg-gray-200 dark:bg-gray-800 py-6 px-2 flex flex-col items-center w-full">
+        <form class="w-full flex gap-4 justify-center">
+            <input type="text" placeholder="Enter task" class="name border-blue-400 border-2 h-11 px-2 w-2/3 focus:outline-none focus:border-none rounded">
+            <button class="bg-blue-700 text-gray-200 px-3 py-2 rounded">Add task</button>
         </form>
 
-        <div class="tasks-list">
-            <ul class="tasks">
-
+        <div class="tasks-list py-16 w-full">
+            <ul class="tasks w-full px-8">
             </ul>
         </div>
     </div>
