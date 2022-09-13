@@ -199,6 +199,10 @@ textarea {
   /* 3 */
 }
 
+button{
+  border: 0;
+}
+
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
@@ -699,7 +703,7 @@ video {
 }
 
 .container{
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
 }
 

@@ -4,16 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
     font-family: 'Poppins', sans-serif;
-}
-
-.container{
-    width: 100vw;
-    min-height: 100vh;
 }
 
 button, input[type="checkbox"]{
@@ -42,4 +34,9 @@ button, input[type="checkbox"]{
 .task-name{
     max-width: 26rem;
     word-break: break-all;
+    word-wrap: break-word;
+}
+
+.light{
+    display: none;
 }
