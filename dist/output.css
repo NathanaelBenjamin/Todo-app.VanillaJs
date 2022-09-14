@@ -725,7 +725,6 @@ button, input[type="checkbox"]{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -751,8 +750,6 @@ button, input[type="checkbox"]{
 }
 
 .delete {
-  position: absolute;
-  right: 1rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
