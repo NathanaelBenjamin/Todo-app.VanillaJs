@@ -750,6 +750,7 @@ button, input[type="checkbox"]{
 }
 
 .delete {
+  margin-bottom: 0.5rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
