@@ -691,19 +691,14 @@ video {
   font-weight: 700;
 }
 
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-gray-600 {
+.text-gray-200 {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .filter {
@@ -730,6 +725,7 @@ button, input[type="checkbox"]{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -755,6 +751,8 @@ button, input[type="checkbox"]{
 }
 
 .delete {
+  position: absolute;
+  right: 1rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));

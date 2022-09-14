@@ -30,8 +30,8 @@ function showTasks(nameOfTask){
     checkBox.setAttribute("type", "checkbox");
 
     deleteButton.addEventListener("click", () => {
-        let filteredTasks = todos.filter(item => {
-            return item !== taskName.innerText;
+        let filteredTasks = todos.filter((item, index) => {
+            return todos.indexOf(item) !== index;
         });
         todos = filteredTasks;
         localStorage.setItem("todos", JSON.stringify(todos));

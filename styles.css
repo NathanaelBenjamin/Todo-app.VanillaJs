@@ -24,7 +24,7 @@ button, input[type="checkbox"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @apply my-6;
+    @apply my-6 relative;
 }
 
 .task{
@@ -33,7 +33,7 @@ button, input[type="checkbox"]{
 }
 
 .delete{
-    @apply bg-blue-500 rounded p-2 dark:bg-blue-200;
+    @apply bg-blue-500 rounded p-2 dark:bg-blue-200 absolute right-4;
 }
 
 .task-name{
