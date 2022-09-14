@@ -31,7 +31,7 @@ function showTasks(nameOfTask){
 
     deleteButton.addEventListener("click", () => {
         let filteredTasks = todos.filter((item, index) => {
-            return todos.indexOf(item) !== index;
+            return item !== taskName.textContent;
         });
         todos = filteredTasks;
         localStorage.setItem("todos", JSON.stringify(todos));
