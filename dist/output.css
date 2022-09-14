@@ -199,10 +199,6 @@ textarea {
   /* 3 */
 }
 
-button{
-  border: 0;
-}
-
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
@@ -589,8 +585,9 @@ video {
   }
 }
 
-.inline {
-  display: inline;
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -681,9 +678,17 @@ video {
   padding-bottom: 4rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-gray-200 {
@@ -691,14 +696,21 @@ video {
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -731,9 +743,11 @@ button, input[type="checkbox"]{
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.dark .task {
-  --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity));
+@media (prefers-color-scheme: dark) {
+  .task {
+    --tw-text-opacity: 1;
+    color: rgb(219 234 254 / var(--tw-text-opacity));
+  }
 }
 
 .task{
@@ -747,18 +761,26 @@ button, input[type="checkbox"]{
   padding: 0.5rem;
 }
 
-.dark .delete {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+@media (prefers-color-scheme: dark) {
+  .delete {
+    --tw-bg-opacity: 1;
+    background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+  }
 }
 
 .task-name{
   max-width: 26rem;
   word-break: break-all;
+  word-wrap: break-word;
 }
 
 .focus\:border-none:focus {
   border-style: none;
+}
+
+.focus\:bg-gray-300:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -766,7 +788,9 @@ button, input[type="checkbox"]{
   outline-offset: 2px;
 }
 
-.dark .dark\:bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
 }

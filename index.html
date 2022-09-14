@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
     <script src="./script.js" defer></script>
-    <title>Todo App</title>    
+    <title>Todo App with Vanilla Js</title>    
 </head>
 <body>
-    <div class="container bg-gray-200 dark:bg-gray-800 py-6 px-2 flex flex-col items-center">             
-        <form class="w-full flex gap-4 justify-center light">
-            <input type="text" placeholder="Enter task" class="name border-blue-400 border-2 h-11 px-2 w-2/3 focus:outline-none focus:border-none rounded">
+    <div class="container bg-gray-200 dark:bg-gray-800 py-6 px-2 flex flex-col items-center">  
+        
+        <header class="text-center">
+            <h1 class="font-bold text-2xl my-5 text-gray-700">My To-do List</h1>
+        </header>
+        
+        <form class="w-full flex gap-4 justify-center">
+            <input type="text" placeholder="Enter task" class="name border-blue-400 border-2 h-11 px-2 w-2/3 focus:outline-none focus:border-none focus:bg-gray-300 rounded">
             <button class="bg-blue-700 text-gray-200 px-3 py-2 rounded">Add task</button>
         </form>
 
         <div class="tasks-list py-16 w-full">
-            <ul class="tasks w-full px-8">
+            <ul class="tasks w-full px-2">
             </ul>
         </div>
     </div>

@@ -8,6 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
 button, input[type="checkbox"]{
     cursor: pointer;
 }
@@ -35,8 +40,4 @@ button, input[type="checkbox"]{
     max-width: 26rem;
     word-break: break-all;
     word-wrap: break-word;
-}
-
-.light{
-    display: none;
 }
